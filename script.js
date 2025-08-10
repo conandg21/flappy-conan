@@ -1,17 +1,17 @@
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
 
-const GRAVITY = 0.4;         // less gravity — slower falling
-const FLAP_STRENGTH = -13;   // stronger flap — higher jump
+const GRAVITY = 0.25;         // much less gravity, slow fall
+const FLAP_STRENGTH = -16;    // very strong flap, big jump
 const PIPE_WIDTH = 50;
-const PIPE_GAP = 180;        // bigger gap between pipes
-const PIPE_SPEED = 1.5;      // slower pipes
+const PIPE_GAP = 220;         // really big gap between pipes
+const PIPE_SPEED = 1;         // very slow pipes
 
 let score = 0;
 let bestScore = 0;
 
 const playerImg = new Image();
-playerImg.src = 'player.png'; // make sure this matches your image path
+playerImg.src = 'player.png'; // update if needed
 
 const player = {
   x: 80,
