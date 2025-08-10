@@ -1,11 +1,11 @@
 const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
 
-const GRAVITY = 0.2;         // very slow fall
-const FLAP_STRENGTH = -9;   // gentle but effective flap
+const GRAVITY = 0.4;         // very slow fall
+const FLAP_STRENGTH = -2;   // gentle but effective flap
 const PIPE_WIDTH = 50;
 const PIPE_GAP = 250;        // very wide gap
-const PIPE_SPEED = 1;        // slow pipes
+const PIPE_SPEED = 2;        // slow pipes
 
 let score = 0;
 let bestScore = 0;
