@@ -16,8 +16,8 @@ playerImg.src = 'player.png'; // make sure this matches your image path
 const player = {
   x: 80,
   y: 150,
-  width: 40,
-  height: 30,
+  width: 80,
+  height: 60,
   velocity: 0
 };
 
